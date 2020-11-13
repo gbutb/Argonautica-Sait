@@ -61,6 +61,7 @@ class SpeechController {
         recognitionTask = speechRecognizer?.recognitionTask(with: request) {
             [unowned self] (result, _) in
             if let transcription = result?.bestTranscription {
+                print(transcription.formattedString)
                 if transcription.formattedString.lowercased().contains("start") {
                     self.delegate?.start()
                 }

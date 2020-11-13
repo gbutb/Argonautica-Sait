@@ -11,14 +11,6 @@ import SceneKit
 import ARKit
 
 class ViewController: ARStereoViewController, SpeechControllerDelegate {
-    func start() {
-        print("Start")
-    }
-    
-    func stop() {
-        print("stop")
-    }
-
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var sceneViewLeft: ARSCNView!
     @IBOutlet weak var sceneViewRight: ARSCNView!
@@ -73,6 +65,24 @@ class ViewController: ARStereoViewController, SpeechControllerDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    func start() {
+        let duration: Double = 5.0
+        let actions: [SCNAction] = [
+            SCNAction.move(
+                to: SCNVector3Make(0, 0, -1),
+                duration: duration),
+            SCNAction.move(
+                to: SCNVector3Make(0, 0, 0),
+                duration: duration)]
+        let anim = SCNAction.sequence(actions)
+        targetObject.runAction(SCNAction.repeatForever(anim))
+    }
+    
+    func stop() {
+        targetObject.removeAllActions()
+        targetObject.position = SCNVector3Make(0, 0, 0)
     }
 
     // MARK: - ARSCNViewDelegate
