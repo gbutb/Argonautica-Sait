@@ -9,9 +9,16 @@
 import Foundation
 import Speech
 
+enum GeometryType {
+    case Sphere
+    case Torus
+}
+
 protocol SpeechControllerDelegate {
     func start()
     func stop()
+    
+    func changeGeometry(_ geometryType: GeometryType)
 }
 
 class SpeechController {
@@ -19,7 +26,7 @@ class SpeechController {
 
     // Audio handlers
     let audioEngine = AVAudioEngine()
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-GB"))
+    let speechRecognizer = SFSpeechRecognizer()
     var request = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
     
@@ -66,10 +73,14 @@ class SpeechController {
                 if transcription.formattedString.lowercased().contains("start") {
                     self.delegate?.start()
                     self.restart()
-                }
-                
-                if transcription.formattedString.lowercased().contains("stop") {
+                } else if transcription.formattedString.lowercased().contains("stop") {
                     self.delegate?.stop()
+                    self.restart()
+                } else if transcription.formattedString.lowercased().contains("ball") {
+                    self.delegate?.changeGeometry(.Sphere)
+                    self.restart()
+                } else if transcription.formattedString.lowercased().contains("torus") {
+                    self.delegate?.changeGeometry(.Torus)
                     self.restart()
                 }
             }

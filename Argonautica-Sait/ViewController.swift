@@ -35,7 +35,6 @@ class ViewController: ARStereoViewController, SpeechControllerDelegate {
 
         sceneView.scene.rootNode.addChildNode(targetObject)
         addFloor(width: 10.0, length: 10.0)
-        targetObject.geometry = SCNSphere(radius: 0.1)
     }
     
     private func addFloor(width: CGFloat, length: CGFloat) {
@@ -83,6 +82,15 @@ class ViewController: ARStereoViewController, SpeechControllerDelegate {
     func stop() {
         targetObject.removeAllActions()
         targetObject.position = SCNVector3Make(0, 0, 0)
+    }
+    
+    func changeGeometry(_ geometryType: GeometryType) {
+        switch geometryType {
+            case .Sphere:
+                targetObject.geometry = SCNSphere(radius: 0.1)
+            case .Torus:
+                targetObject.geometry = SCNTorus(ringRadius: 0.1, pipeRadius: 0.01)
+        }
     }
 
     // MARK: - ARSCNViewDelegate
