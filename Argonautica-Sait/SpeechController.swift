@@ -20,7 +20,7 @@ class SpeechController {
     // Audio handlers
     let audioEngine = AVAudioEngine()
     let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-GB"))
-    let request = SFSpeechAudioBufferRecognitionRequest()
+    var request = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
     
     init() {
@@ -43,7 +43,8 @@ class SpeechController {
     }
 
     private func startRecognition() {
-        print(SFSpeechRecognizer.supportedLocales())
+        request.shouldReportPartialResults = true
+
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
 
@@ -57,15 +58,36 @@ class SpeechController {
         } catch {
             print("Error")
         }
-        
+
         recognitionTask = speechRecognizer?.recognitionTask(with: request) {
             [unowned self] (result, _) in
             if let transcription = result?.bestTranscription {
                 print(transcription.formattedString)
                 if transcription.formattedString.lowercased().contains("start") {
                     self.delegate?.start()
+                    self.restart()
+                }
+                
+                if transcription.formattedString.lowercased().contains("stop") {
+                    self.delegate?.stop()
+                    self.restart()
                 }
             }
         }
+    }
+    
+    /**
+     * Restarts speech recognition
+     */
+    private func restart() {
+        // Remove previous ones
+        self.recognitionTask?.cancel()
+        self.audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0)
+        self.request = SFSpeechAudioBufferRecognitionRequest()
+        self.recognitionTask = nil
+        
+        // Restart recognition
+        self.startRecognition()
     }
 }
