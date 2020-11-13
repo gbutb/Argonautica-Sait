@@ -28,8 +28,22 @@ class ViewController: ARStereoViewController {
 
         super.viewDidLoad()
         sceneView.delegate = self
+
+        addFloor(width: 10.0, length: 10.0)
     }
     
+    private func addFloor(width: CGFloat, length: CGFloat) {
+        // Define floor
+        let floor = SCNFloor()
+        floor.width = width
+        floor.length = length
+        floor.reflectivity = 0.0
+
+        let floorNode = SCNNode(geometry: floor)
+        floorNode.position = SCNVector3Make(0, -0.1, 0)
+        self.sceneView.scene.rootNode.addChildNode(floorNode)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
