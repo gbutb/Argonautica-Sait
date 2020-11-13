@@ -18,6 +18,9 @@ class ViewController: ARStereoViewController {
     @IBOutlet weak var imageViewLeft: UIImageView!
     @IBOutlet weak var imageViewRight: UIImageView!
 
+    // Object onto which the user gases onto
+    private var targetObject: SCNNode = SCNNode()
+
     let backgroundCOlor = UIColor.black;
 
     override func viewDidLoad() {
@@ -29,7 +32,9 @@ class ViewController: ARStereoViewController {
         super.viewDidLoad()
         sceneView.delegate = self
 
+        sceneView.scene.rootNode.addChildNode(targetObject)
         addFloor(width: 10.0, length: 10.0)
+        targetObject.geometry = SCNSphere(radius: 0.1)
     }
     
     private func addFloor(width: CGFloat, length: CGFloat) {

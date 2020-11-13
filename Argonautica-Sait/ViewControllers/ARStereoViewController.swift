@@ -33,7 +33,7 @@ class ARStereoViewController: UIViewController, ARSCNViewDelegate {
         let currentBrightness = UIScreen.main.brightness
         UIScreen.main.brightness = currentBrightness
 
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         sceneView_v.scene = scene
         
         // Create light
