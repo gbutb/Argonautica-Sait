@@ -10,7 +10,14 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: ARStereoViewController {
+class ViewController: ARStereoViewController, SpeechControllerDelegate {
+    func start() {
+        print("Start")
+    }
+    
+    func stop() {
+        print("stop")
+    }
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var sceneViewLeft: ARSCNView!
@@ -20,6 +27,7 @@ class ViewController: ARStereoViewController {
 
     // Object onto which the user gases onto
     private var targetObject: SCNNode = SCNNode()
+    private let speechController = SpeechController()
 
     let backgroundCOlor = UIColor.black;
 
@@ -31,6 +39,7 @@ class ViewController: ARStereoViewController {
 
         super.viewDidLoad()
         sceneView.delegate = self
+        speechController.delegate = self
 
         sceneView.scene.rootNode.addChildNode(targetObject)
         addFloor(width: 10.0, length: 10.0)

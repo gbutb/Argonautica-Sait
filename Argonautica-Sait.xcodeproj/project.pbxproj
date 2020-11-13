@@ -16,6 +16,7 @@
 		10B16D33255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D32255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift */; };
 		10B16D41255E9FC900E5FD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B16D40255E9FC900E5FD78 /* Main.storyboard */; };
 		10B16D44255EA1A200E5FD78 /* ARStereoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D43255EA1A200E5FD78 /* ARStereoViewController.swift */; };
+		10B38768255EBD7600706F14 /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B38767255EBD7600706F14 /* SpeechController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		10B16D34255E9F5C00E5FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10B16D40255E9FC900E5FD78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		10B16D43255EA1A200E5FD78 /* ARStereoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARStereoViewController.swift; sourceTree = "<group>"; };
+		10B38767255EBD7600706F14 /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				10B16D1B255E9F5C00E5FD78 /* LaunchScreen.storyboard */,
 				10B16D40255E9FC900E5FD78 /* Main.storyboard */,
 				10B16D1E255E9F5C00E5FD78 /* Info.plist */,
+				10B38767255EBD7600706F14 /* SpeechController.swift */,
 			);
 			path = "Argonautica-Sait";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B16D15255E9F5B00E5FD78 /* ViewController.swift in Sources */,
+				10B38768255EBD7600706F14 /* SpeechController.swift in Sources */,
 				10B16D11255E9F5B00E5FD78 /* AppDelegate.swift in Sources */,
 				10B16D44255EA1A200E5FD78 /* ARStereoViewController.swift in Sources */,
 			);
