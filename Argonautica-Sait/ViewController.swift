@@ -88,8 +88,10 @@ class ViewController: ARStereoViewController, SpeechControllerDelegate {
         switch geometryType {
             case .Sphere:
                 targetObject.geometry = SCNSphere(radius: 0.1)
+                targetObject.geometry?.firstMaterial?.diffuse.contents = UIColor(red: 0.3, green: 0.5, blue: 0.4, alpha: 1 )
             case .Torus:
                 targetObject.geometry = SCNTorus(ringRadius: 0.1, pipeRadius: 0.01)
+                targetObject.geometry?.firstMaterial?.diffuse.contents = UIColor(red: 0.3, green: 0.5, blue: 0.4, alpha: 1 )
         }
     }
 
