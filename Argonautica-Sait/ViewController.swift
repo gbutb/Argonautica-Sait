@@ -1,0 +1,78 @@
+//
+//  ViewController.swift
+//  Argonautica-Sait
+//
+//  Created by Giorgi Butbaia on 11/13/20.
+//  Copyright © 2020 Argonautica. All rights reserved.
+//
+
+import UIKit
+import SceneKit
+import ARKit
+
+class ViewController: ARStereoViewController {
+
+    @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var sceneViewLeft: ARSCNView!
+    @IBOutlet weak var sceneViewRight: ARSCNView!
+    @IBOutlet weak var imageViewLeft: UIImageView!
+    @IBOutlet weak var imageViewRight: UIImageView!
+
+    let backgroundCOlor = UIColor.black;
+
+    override func viewDidLoad() {
+        // Bind view
+        bindView(
+            sceneView, sceneViewLeft, sceneViewRight,
+            imageViewLeft, imageViewRight)
+
+        super.viewDidLoad()
+        sceneView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+
+        // Run the view's session
+        sceneView.session.run(configuration)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        sceneView.session.pause()
+    }
+
+    // MARK: - ARSCNViewDelegate
+    
+/*
+    // Override to create and configure nodes for anchors added to the view's session.
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        let node = SCNNode()
+     
+        return node
+    }
+*/
+    override func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        super.renderer(renderer, updateAtTime: time)
+    }
+
+    func session(_ session: ARSession, didFailWithError error: Error) {
+        // Present an error message to the user
+        
+    }
+    
+    func sessionWasInterrupted(_ session: ARSession) {
+        // Inform the user that the session has been interrupted, for example, by presenting an overlay
+        
+    }
+    
+    func sessionInterruptionEnded(_ session: ARSession) {
+        // Reset tracking and/or remove existing anchors if consistent tracking is required
+        
+    }
+}

@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10B16D11255E9F5B00E5FD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D10255E9F5B00E5FD78 /* AppDelegate.swift */; };
+		10B16D13255E9F5B00E5FD78 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B16D12255E9F5B00E5FD78 /* art.scnassets */; };
+		10B16D15255E9F5B00E5FD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D14255E9F5B00E5FD78 /* ViewController.swift */; };
+		10B16D1A255E9F5C00E5FD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B16D19255E9F5C00E5FD78 /* Assets.xcassets */; };
+		10B16D1D255E9F5C00E5FD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B16D1B255E9F5C00E5FD78 /* LaunchScreen.storyboard */; };
+		10B16D28255E9F5C00E5FD78 /* Argonautica_SaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D27255E9F5C00E5FD78 /* Argonautica_SaitTests.swift */; };
+		10B16D33255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D32255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift */; };
+		10B16D41255E9FC900E5FD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B16D40255E9FC900E5FD78 /* Main.storyboard */; };
+		10B16D44255EA1A200E5FD78 /* ARStereoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16D43255EA1A200E5FD78 /* ARStereoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10B16D24255E9F5C00E5FD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B16D05255E9F5B00E5FD78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10B16D0C255E9F5B00E5FD78;
+			remoteInfo = "Argonautica-Sait";
+		};
+		10B16D2F255E9F5C00E5FD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B16D05255E9F5B00E5FD78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10B16D0C255E9F5B00E5FD78;
+			remoteInfo = "Argonautica-Sait";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10B16D0D255E9F5B00E5FD78 /* Argonautica-Sait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Argonautica-Sait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B16D10255E9F5B00E5FD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10B16D12255E9F5B00E5FD78 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		10B16D14255E9F5B00E5FD78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10B16D19255E9F5C00E5FD78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10B16D1C255E9F5C00E5FD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10B16D1E255E9F5C00E5FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B16D23255E9F5C00E5FD78 /* Argonautica-SaitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argonautica-SaitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B16D27255E9F5C00E5FD78 /* Argonautica_SaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argonautica_SaitTests.swift; sourceTree = "<group>"; };
+		10B16D29255E9F5C00E5FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B16D2E255E9F5C00E5FD78 /* Argonautica-SaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argonautica-SaitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B16D32255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argonautica_SaitUITests.swift; sourceTree = "<group>"; };
+		10B16D34255E9F5C00E5FD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B16D40255E9FC900E5FD78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		10B16D43255EA1A200E5FD78 /* ARStereoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARStereoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10B16D0A255E9F5B00E5FD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D20255E9F5C00E5FD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D2B255E9F5C00E5FD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B16D04255E9F5B00E5FD78 = {
+			isa = PBXGroup;
+			children = (
+				10B16D0F255E9F5B00E5FD78 /* Argonautica-Sait */,
+				10B16D26255E9F5C00E5FD78 /* Argonautica-SaitTests */,
+				10B16D31255E9F5C00E5FD78 /* Argonautica-SaitUITests */,
+				10B16D0E255E9F5B00E5FD78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10B16D0E255E9F5B00E5FD78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10B16D0D255E9F5B00E5FD78 /* Argonautica-Sait.app */,
+				10B16D23255E9F5C00E5FD78 /* Argonautica-SaitTests.xctest */,
+				10B16D2E255E9F5C00E5FD78 /* Argonautica-SaitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10B16D0F255E9F5B00E5FD78 /* Argonautica-Sait */ = {
+			isa = PBXGroup;
+			children = (
+				10B16D42255EA18C00E5FD78 /* ViewControllers */,
+				10B16D10255E9F5B00E5FD78 /* AppDelegate.swift */,
+				10B16D12255E9F5B00E5FD78 /* art.scnassets */,
+				10B16D14255E9F5B00E5FD78 /* ViewController.swift */,
+				10B16D19255E9F5C00E5FD78 /* Assets.xcassets */,
+				10B16D1B255E9F5C00E5FD78 /* LaunchScreen.storyboard */,
+				10B16D40255E9FC900E5FD78 /* Main.storyboard */,
+				10B16D1E255E9F5C00E5FD78 /* Info.plist */,
+			);
+			path = "Argonautica-Sait";
+			sourceTree = "<group>";
+		};
+		10B16D26255E9F5C00E5FD78 /* Argonautica-SaitTests */ = {
+			isa = PBXGroup;
+			children = (
+				10B16D27255E9F5C00E5FD78 /* Argonautica_SaitTests.swift */,
+				10B16D29255E9F5C00E5FD78 /* Info.plist */,
+			);
+			path = "Argonautica-SaitTests";
+			sourceTree = "<group>";
+		};
+		10B16D31255E9F5C00E5FD78 /* Argonautica-SaitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10B16D32255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift */,
+				10B16D34255E9F5C00E5FD78 /* Info.plist */,
+			);
+			path = "Argonautica-SaitUITests";
+			sourceTree = "<group>";
+		};
+		10B16D42255EA18C00E5FD78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10B16D43255EA1A200E5FD78 /* ARStereoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10B16D0C255E9F5B00E5FD78 /* Argonautica-Sait */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B16D37255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-Sait" */;
+			buildPhases = (
+				10B16D09255E9F5B00E5FD78 /* Sources */,
+				10B16D0A255E9F5B00E5FD78 /* Frameworks */,
+				10B16D0B255E9F5B00E5FD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Argonautica-Sait";
+			productName = "Argonautica-Sait";
+			productReference = 10B16D0D255E9F5B00E5FD78 /* Argonautica-Sait.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10B16D22255E9F5C00E5FD78 /* Argonautica-SaitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B16D3A255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-SaitTests" */;
+			buildPhases = (
+				10B16D1F255E9F5C00E5FD78 /* Sources */,
+				10B16D20255E9F5C00E5FD78 /* Frameworks */,
+				10B16D21255E9F5C00E5FD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10B16D25255E9F5C00E5FD78 /* PBXTargetDependency */,
+			);
+			name = "Argonautica-SaitTests";
+			productName = "Argonautica-SaitTests";
+			productReference = 10B16D23255E9F5C00E5FD78 /* Argonautica-SaitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10B16D2D255E9F5C00E5FD78 /* Argonautica-SaitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B16D3D255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-SaitUITests" */;
+			buildPhases = (
+				10B16D2A255E9F5C00E5FD78 /* Sources */,
+				10B16D2B255E9F5C00E5FD78 /* Frameworks */,
+				10B16D2C255E9F5C00E5FD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10B16D30255E9F5C00E5FD78 /* PBXTargetDependency */,
+			);
+			name = "Argonautica-SaitUITests";
+			productName = "Argonautica-SaitUITests";
+			productReference = 10B16D2E255E9F5C00E5FD78 /* Argonautica-SaitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10B16D05255E9F5B00E5FD78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Argonautica;
+				TargetAttributes = {
+					10B16D0C255E9F5B00E5FD78 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					10B16D22255E9F5C00E5FD78 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 10B16D0C255E9F5B00E5FD78;
+					};
+					10B16D2D255E9F5C00E5FD78 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 10B16D0C255E9F5B00E5FD78;
+					};
+				};
+			};
+			buildConfigurationList = 10B16D08255E9F5B00E5FD78 /* Build configuration list for PBXProject "Argonautica-Sait" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10B16D04255E9F5B00E5FD78;
+			productRefGroup = 10B16D0E255E9F5B00E5FD78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10B16D0C255E9F5B00E5FD78 /* Argonautica-Sait */,
+				10B16D22255E9F5C00E5FD78 /* Argonautica-SaitTests */,
+				10B16D2D255E9F5C00E5FD78 /* Argonautica-SaitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10B16D0B255E9F5B00E5FD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B16D13255E9F5B00E5FD78 /* art.scnassets in Resources */,
+				10B16D41255E9FC900E5FD78 /* Main.storyboard in Resources */,
+				10B16D1D255E9F5C00E5FD78 /* LaunchScreen.storyboard in Resources */,
+				10B16D1A255E9F5C00E5FD78 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D21255E9F5C00E5FD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D2C255E9F5C00E5FD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10B16D09255E9F5B00E5FD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B16D15255E9F5B00E5FD78 /* ViewController.swift in Sources */,
+				10B16D11255E9F5B00E5FD78 /* AppDelegate.swift in Sources */,
+				10B16D44255EA1A200E5FD78 /* ARStereoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D1F255E9F5C00E5FD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B16D28255E9F5C00E5FD78 /* Argonautica_SaitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B16D2A255E9F5C00E5FD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B16D33255E9F5C00E5FD78 /* Argonautica_SaitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10B16D25255E9F5C00E5FD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10B16D0C255E9F5B00E5FD78 /* Argonautica-Sait */;
+			targetProxy = 10B16D24255E9F5C00E5FD78 /* PBXContainerItemProxy */;
+		};
+		10B16D30255E9F5C00E5FD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10B16D0C255E9F5B00E5FD78 /* Argonautica-Sait */;
+			targetProxy = 10B16D2F255E9F5C00E5FD78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10B16D1B255E9F5C00E5FD78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B16D1C255E9F5C00E5FD78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10B16D35255E9F5C00E5FD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10B16D36255E9F5C00E5FD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10B16D38255E9F5C00E5FD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-Sait/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-Sait";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10B16D39255E9F5C00E5FD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-Sait/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-Sait";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10B16D3B255E9F5C00E5FD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-SaitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-SaitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argonautica-Sait.app/Argonautica-Sait";
+			};
+			name = Debug;
+		};
+		10B16D3C255E9F5C00E5FD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-SaitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-SaitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argonautica-Sait.app/Argonautica-Sait";
+			};
+			name = Release;
+		};
+		10B16D3E255E9F5C00E5FD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-SaitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-SaitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Argonautica-Sait";
+			};
+			name = Debug;
+		};
+		10B16D3F255E9F5C00E5FD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-SaitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-SaitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Argonautica-Sait";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10B16D08255E9F5B00E5FD78 /* Build configuration list for PBXProject "Argonautica-Sait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B16D35255E9F5C00E5FD78 /* Debug */,
+				10B16D36255E9F5C00E5FD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B16D37255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-Sait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B16D38255E9F5C00E5FD78 /* Debug */,
+				10B16D39255E9F5C00E5FD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B16D3A255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-SaitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B16D3B255E9F5C00E5FD78 /* Debug */,
+				10B16D3C255E9F5C00E5FD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B16D3D255E9F5C00E5FD78 /* Build configuration list for PBXNativeTarget "Argonautica-SaitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B16D3E255E9F5C00E5FD78 /* Debug */,
+				10B16D3F255E9F5C00E5FD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10B16D05255E9F5B00E5FD78 /* Project object */;
+}
